@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header onIrAPantalla={setActiveIndex} />
       <FondoTripartito activeIndex={activeIndex} onSelect={setActiveIndex} />
       <FooterGeneral pantallaActiva={activeIndex} />
     </div>

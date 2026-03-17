@@ -161,6 +161,23 @@
   }
 }
 
+/* Acordeón precios: estilo glass en header (sobrescribe Bootstrap) */
+.accordion-precios .accordion-button {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(12px);
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: none !important;
+}
+.accordion-precios .accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.accordion-precios .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
 .ticks {
   position: relative;
   width: 100%;
