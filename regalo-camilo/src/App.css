@@ -178,6 +178,106 @@
   filter: brightness(0) invert(1);
 }
 
+/* Modal agendar: borde sutil tipo glass */
+.modal-agendar-dialog {
+  max-width: 26rem;
+}
+
+.modal-agendar-input {
+  background: rgba(0, 0, 0, 0.28) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #fff !important;
+  font-size: 0.875rem;
+}
+
+.modal-agendar-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.modal-agendar-input:focus {
+  background: rgba(0, 0, 0, 0.38) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.12) !important;
+}
+
+.modal-agendar-content {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  /* visible: evita recortar el DayPicker (caption + flechas en posición absoluta) */
+  overflow: visible;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.modal-agendar-dialog .modal-body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: min(85vh, 36rem);
+}
+
+/* Calendario compacto: celdas un poco más chicas para que quepan sin pisarse */
+.calendario-reserva--compact .rdp-root {
+  --rdp-day-width: 2.125rem;
+  --rdp-day-height: 2.125rem;
+  --rdp-day_button-width: 2rem;
+  --rdp-day_button-height: 2rem;
+  --rdp-nav-height: 2.35rem;
+  --rdp-nav_button-height: 1.9rem;
+  --rdp-nav_button-width: 1.9rem;
+  --rdp-weekday-padding: 0.2rem 0;
+}
+
+.calendario-reserva--compact .rdp-month {
+  width: 100%;
+}
+
+.calendario-reserva--compact .rdp-month_grid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Calendario de reservas: integrado con fondos oscuros / glass */
+.calendario-reserva--glass .rdp-root {
+  --rdp-accent-color: #e8e8e8;
+  --rdp-accent-background-color: rgba(255, 255, 255, 0.2);
+  --rdp-day_button-border-radius: 0.35rem;
+  color: #fff;
+  background: transparent !important;
+}
+
+.calendario-reserva--glass .rdp-weekday {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.calendario-reserva--glass .rdp-caption_label {
+  color: #fff;
+}
+
+.calendario-reserva--glass .rdp-nav_button svg {
+  fill: #fff;
+}
+
+.calendario-reserva--rosa .rdp-root {
+  --rdp-accent-color: #ffb6c1;
+  --rdp-accent-background-color: rgba(255, 105, 180, 0.25);
+  --rdp-day_button-border-radius: 0.35rem;
+  color: #fff;
+  background: transparent !important;
+}
+
+.calendario-reserva--rosa .rdp-weekday {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.calendario-reserva--rosa .rdp-caption_label {
+  color: #fff;
+}
+
+.calendario-reserva--rosa .rdp-nav_button svg {
+  fill: #fff;
+}
+
 .ticks {
   position: relative;
   width: 100%;

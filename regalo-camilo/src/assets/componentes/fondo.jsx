@@ -1,16 +1,15 @@
 import Carousel from 'react-bootstrap/Carousel';
 import imagenFondo from '../../imagenes/bigben.jpg';
 import imagenFondo2 from '../../imagenes/ChatGPT Image 14 mar 2026, 12_58_21 p.m..png';
-import imagenFondo3 from '../../imagenes/ChatGPT Image 14 mar 2026, 01_10_02 p.m..png';
+import imagenFondo3 from '../../imagenes/fondo londres definitivo.png';
 import CardHorizontal from './CardHorizontal.jsx';
 import Tarjeta from './card.jsx';
 import AccordionPrecios from './AccordionPrecios.jsx';
-import BotonAgendar from './boton.jsx';
+import ModalAgendar from './agendar.jsx';
 import imagenCardCamilo from '../../imagenes/Captura de pantalla 2026-03-15 160019.png';
 import imagenCardVivi from '../../imagenes/Captura de pantalla 2026-03-15 161632.png';
 
 function FondoTripartito({ activeIndex, onSelect }) {
-
   const estiloPantalla = {
     width: '100%',
     height: '100vh',
@@ -57,7 +56,7 @@ function FondoTripartito({ activeIndex, onSelect }) {
             <AccordionPrecios />
           </div>
           <div style={{ marginTop: '1.5rem' }}>
-            <BotonAgendar variant="glass" />
+            <ModalAgendar variant="glass" profesor="camilo" />
           </div>
         </div>
       </Carousel.Item>
@@ -117,7 +116,7 @@ function FondoTripartito({ activeIndex, onSelect }) {
             <AccordionPrecios variant="rosa" />
           </div>
           <div style={{ marginTop: '1.25rem' }}>
-            <BotonAgendar variant="rosa" />
+            <ModalAgendar variant="rosa" profesor="vivi" />
           </div>
         </div>
       </Carousel.Item>
