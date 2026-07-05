@@ -45,7 +45,7 @@ function FondoTripartito({ activeIndex, onSelect }) {
           <CardHorizontal
             imgSrc={imagenCardCamilo}
             title="Camilo Paredes"
-            text="Profesor de ingles , de la universidad alberto hurtado he trabajado mas de 10 años en el colegio tajamar, tengo 34 años .."
+            text="Profesor de inglés, de la Universidad Alberto Hurtado. He trabajado más de 10 años en el colegio Tajamar. Tengo 34 años."
             buttonText=""
             cardStyle={{ boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
           />
@@ -82,7 +82,7 @@ function FondoTripartito({ activeIndex, onSelect }) {
               <span style={{ color: '#1d3557' }}>NOSOTROS</span>
             </div>
           </div>
-          <p className="mb-3" style={{ fontSize: '1.15rem', fontWeight: 500, maxWidth: '90%', textShadow: '0 1px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.6)' }}>Queridos estudiantes de ingles, estamos aca para ayudarlos a caminar en este sendero   de aprender ingles...LEARN WITH US </p>
+          <p className="mb-3" style={{ fontSize: '1.15rem', fontWeight: 500, maxWidth: '90%', textShadow: '0 1px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.6)' }}>Queridos estudiantes de inglés, estamos acá para ayudarlos a caminar en este sendero de aprender inglés... LEARN WITH US</p>
           <p className="mb-0" style={{ fontSize: '1.15rem', fontWeight: 500, maxWidth: '90%', textShadow: '0 1px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.6)' }}>Tenemos clases para todas las edades. Camilo se encuentra a la izquierda y Vivi a la derecha. ¡CONÓCELOS!</p>
         </div>
       </Carousel.Item>
@@ -104,7 +104,7 @@ function FondoTripartito({ activeIndex, onSelect }) {
         }}>
           <CardHorizontal
             imgSrc={imagenCardVivi}
-            title="Viviana Fernandez"
+            title="Viviana Fernández"
             text="Profesora de inglés con más de 10 años de experiencia. Clases para todas las edades."
             buttonText=""
             cardStyle={{ boxShadow: '0 4px 20px rgba(0,0,0,0.15)', marginTop: '1rem' }}

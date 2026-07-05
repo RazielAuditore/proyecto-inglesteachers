@@ -63,7 +63,7 @@ function botonHoraStyle({ activa, ocupada, variant, compact }) {
 
 function CalendarioReserva({
   variant = 'glass',
-  titulo = 'Elegí día y hora',
+  titulo = 'Elige día y hora',
   compact = false,
   dia,
   hora,

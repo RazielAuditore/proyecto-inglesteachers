@@ -58,12 +58,12 @@ function ModalAgendar({ variant = 'glass', profesor = 'camilo' }) {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        setErrorMsg(data.error || 'No se pudo guardar la reserva. Intentá de nuevo.');
+        setErrorMsg(data.error || 'No se pudo guardar la reserva. Intenta de nuevo.');
         return;
       }
       cerrar();
     } catch {
-      setErrorMsg('No hay conexión con el servidor. ¿Está encendido el API?');
+      setErrorMsg('No hay conexión con el servidor. ¿Está encendida la API?');
     } finally {
       setEnviando(false);
     }
@@ -102,7 +102,7 @@ function ModalAgendar({ variant = 'glass', profesor = 'camilo' }) {
           <div className="d-flex justify-content-center">
             <CalendarioReserva
               variant={variant}
-              titulo="Elegí día y hora"
+              titulo="Elige día y hora"
               compact
               dia={dia}
               hora={hora}

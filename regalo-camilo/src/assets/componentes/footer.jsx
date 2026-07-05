@@ -60,7 +60,7 @@ export function FooterGeneral({ pantallaActiva = 1 }) {
                   <div className="d-flex justify-content-between align-items-center">
                     <a href={CONTACTOS.instagramCharmingLocked} target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none d-flex align-items-center gap-2">
                       <BsInstagram size={22} />
-                      <span>Viniana Fernandez</span>
+                      <span>Viviana Fernández</span>
                     </a>
                     <a href="tel:+56971905600" className="text-white text-decoration-none small">+56971905600</a>
                   </div>
